@@ -1,0 +1,1 @@
+memeinvazio frontend fejlesztése

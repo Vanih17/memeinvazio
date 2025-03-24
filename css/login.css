@@ -1,0 +1,86 @@
+:root {
+    --text-color: #17BD3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 3rem;
+}
+
+.tarolo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.focim {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    user-select: none;
+}
+
+.focim_zold {
+    color: var(--text-color);
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+input {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.login {
+    background-color: var(--text-color);
+    width: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.login:hover {
+    transform: scale(1.01);
+}
+
+.login button {
+    font-size: 1.5rem;
+    color: white;
+    background-color: inherit;
+    border: none;
+    cursor: inherit;
+}
+
+@media screen and (max-width: 500px) {
+
+    .login,
+    .input {
+        width: 340px;
+    }
+}
