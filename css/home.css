@@ -1,0 +1,110 @@
+:root {
+    --text-color: #17BD3E; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: silver;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 1.875rem;
+}
+
+.menu-logo {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.menu-logo-green {
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+}   
+
+nav a {
+    text-decoration: none; 
+    color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease 500ms;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+.icon-home {
+    background-color: silver;
+}
+
+.icon-logout {
+    background-color: red;
+    color: white;
+}
+
+.hamburger-menu {
+    background-color: white;
+    width: 30px;
+    height: 25px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: black;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle:checked~nav {
+    display: flex;
+}
+
+@media  screen and (max-width:768px){
+    .hamburger-menu{
+        display: flex;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        font-size: 0.5rem;
+        display: none;
+    }
+
+}
