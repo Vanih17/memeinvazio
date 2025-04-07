@@ -24,7 +24,7 @@ async function login() {
     
         if (response.ok) {
             alert(data.message);
-            window.location.href = '../html/login.html';
+            window.location.href = '../html/home.html';
         } else if(data.errors) {
             let errorMessages = '';
             data.errors.forEach(error => {
@@ -37,6 +37,6 @@ async function login() {
             alert('Ismeretlen hiba!');
         }
     } catch (error) {
-        console.log(error0);
+        console.log(error);
     }
 }
